@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Position Practice</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-   <body>
-       <div id="wrapper">
-         <div id="header"></div>
-         <div id="navigation"></div>
-         <div id="main_content">
-            <div class="subcontents"></div>
-            <div class="subcontents"></div>
-            <div class="subcontents"></div>
-            <div id="advertisement"></div>
-         </div>
-      </div><!-- end of wrapper -->
-   </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        div {
+            margin-left: 400px;
+            margin-top: 40px;
+            max-width: 400px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: beige;">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="firstName">First Name</label>
+        <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
+        <br>
+        <label for="lastName">Last Name</label>
+        <input type="text" placeholder="Last Name" name="lastName" id ="lastName" required>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <br>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+        <br>
+        <label for="birthDay">Birthday</label>
+        <input type="date" name="birthDay" id="birthDay">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="female" id="female">
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male">
+        <br>
+        <label for="other">Other</label>
+        <input type="radio" name="other" id="other">
+        <br>
+<textarea name="talkToMe" id="talkToMe" cols="30" rows="10" placeholder="Talk To Me."></textarea>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+
+</body>
+
 </html>
